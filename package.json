@@ -1,0 +1,24 @@
+{
+  "name": "vite-vue2-dts-test",
+  "version": "1.0.0",
+  "description": "vite-plugin-dts generate",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.27",
+    "@vue/composition-api": "^1.7.0",
+    "less": "^4.1.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.13",
+    "vite-plugin-dts": "^1.3.1",
+    "vite-plugin-singlefile": "^0.5.1",
+    "vite-plugin-vue2": "^1.9.3",
+    "vite-tsconfig-paths": "^3.5.0",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
