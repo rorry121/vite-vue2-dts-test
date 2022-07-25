@@ -12,7 +12,7 @@ interface Model {
 }
 
 export default defineComponent({
-    name: '',
+    name: 'app',
     props: {
         value: {
             type: String as PropType<string>,

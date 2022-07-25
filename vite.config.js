@@ -13,12 +13,18 @@ const tsPlugin = [
     dts({
         tsConfigFilePath: './tsconfig.json',
         include: ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-        exclude: ["src/shims-vue.d.ts"],
         outputDir: 'dist/v2',
         staticImport: true,
         insertTypesEntry: true,
         logDiagnostics: true,
         skipDiagnostics: false,
+        compilerOptions: {
+            baseUrl: ".",
+            paths: {
+                "vue": ["node_modules/vue"],
+                "@vue/composition-api": ["node_modules/@vue/composition-api"]
+            }
+        }
     }),
     tsconfigPaths()
 ];
